@@ -1,4 +1,5 @@
-//import React from "react";
+//src/app/components/header.tsx
+
 import Navbar from "./navbar"
 
 const Header = () => {

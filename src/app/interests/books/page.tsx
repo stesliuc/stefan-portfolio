@@ -1,10 +1,10 @@
-//src/app/blog.tsx
+//src/app/interests/books.tsx
 
-export default function Blog() {
+export default function Books() {
     return (
       <main>
         <div>
-          blog
+          books
         </div>
       </main>
     );

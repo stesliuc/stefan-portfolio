@@ -1,10 +1,10 @@
-//src/app/blog.tsx
+//src/app/studies.tsx
 
-export default function Blog() {
+export default function Studies() {
     return (
       <main>
         <div>
-          blog
+          studies
         </div>
       </main>
     );
