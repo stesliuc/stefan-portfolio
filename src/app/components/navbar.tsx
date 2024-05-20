@@ -15,8 +15,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
-} from "@/app/components/ui/navigation-menu"
-import { navigationMenuTriggerStyle } from "@/app/components/ui/navigation-menu"
+} from "@/components/ui/navigation-menu"
+import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 
 
 const interests: { title: string; href: string; description: string }[] = [
@@ -31,6 +31,12 @@ const interests: { title: string; href: string; description: string }[] = [
     href: "/interests/studies",
     description:
       "A page with all the areas of study I am interested in learning about.",
+  },
+  {
+    title: "Martial Arts",
+    href: "/interests/martialarts",
+    description:
+      "My thoughts on different martial arts as a practictioner of Brazilian Jiu Jitsu and Muay Thai",
   },
 ]
 
@@ -58,6 +64,38 @@ export function NavigationMenuHeader() {
               Blog
             </NavigationMenuLink>
           </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+              <li className="row-span-3">
+                <NavigationMenuLink asChild>
+                  <a
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    href="/"
+                  >
+                    <div className="mb-2 mt-4 text-lg font-medium">
+                      Projects
+                    </div>
+                    <p className="text-sm leading-tight text-muted-foreground">
+                      Various coding and math projects I have undertaken. 
+                      I work on projects that help me learn new concepts, or are useful to my work and personal life.
+                    </p>
+                  </a>
+                </NavigationMenuLink>
+              </li>
+              <ListItem href="/projects/#scraper" title="Scraper">
+                A simple web scraper I built to practice development best practices.
+              </ListItem>
+              <ListItem href="/projects/#portfolio" title="Portfolio">
+                The website you are currently reading!
+              </ListItem>
+              <ListItem href="/projects/#llm" title="Llama Model">
+                In progress project where I implement LLM research using Llama3.
+              </ListItem>
+            </ul>
+          </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
         <NavigationMenuTrigger>Interests</NavigationMenuTrigger>

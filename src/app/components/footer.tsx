@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <>
-            <footer className="text-center text-xs margin-bottom-0 bg-cyan-100">
+            <footer className="text-center text-xs margin-bottom-0 p-4">
                 Made by Stefan Tesliuc
             </footer>
         </>
