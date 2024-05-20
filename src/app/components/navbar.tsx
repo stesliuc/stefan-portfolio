@@ -15,7 +15,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   NavigationMenuViewport,
-} from "@/components/ui/navigation-menu"
+} from "@/app/components/ui/navigation-menu"
+import { navigationMenuTriggerStyle } from "@/app/components/ui/navigation-menu"
 
 
 const interests: { title: string; href: string; description: string }[] = [
@@ -38,35 +39,28 @@ export function NavigationMenuHeader() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Menu</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    <div className="mb-2 mt-4 text-lg font-medium">
-                      Welcome to Stefan&apos;s website!
-                    </div>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/" title="Home">
-                Home Page of my Portfolio
-              </ListItem>
-              <ListItem href="/about" title="About Me">
-                Who am I?
-              </ListItem>
-              <ListItem href="/blog" title="Blog">
-                Blog of some of my thoughts.
-              </ListItem> 
-            </ul>
-          </NavigationMenuContent>
+          <Link href="/" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Home
+            </NavigationMenuLink>
+          </Link>
         </NavigationMenuItem>
-      <NavigationMenuItem>
-          <NavigationMenuTrigger>Interests</NavigationMenuTrigger>
+        <NavigationMenuItem>
+          <Link href="/about" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              About Me
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+          <Link href="/blog" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Blog
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem>
+        <NavigationMenuTrigger>Interests</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {interests.map((interests) => (
@@ -79,14 +73,7 @@ export function NavigationMenuHeader() {
                     </ListItem>
                   ))}
                 </ul>
-              </NavigationMenuContent>
-            </NavigationMenuItem>
-          <NavigationMenuItem>
-          <Link href="/blog">
-            <NavigationMenuLink>
-              Blog
-            </NavigationMenuLink>
-          </Link>
+          </NavigationMenuContent>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
