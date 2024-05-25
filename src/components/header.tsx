@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { NavigationMenuHeader } from "./navbar"
 import { Icons } from "./icons";
 import { buttonVariants } from "./ui/button";
+import { MobileNav } from "./mobile-nav";
 
 const Header = () => {
   return (
@@ -13,37 +14,38 @@ const Header = () => {
         <div className="container flex max-w-screen-2xl items-center">
           <NavigationMenuHeader />
           <div className="flex flex-1 items-center justify-end space-x-2">
-          <nav className="flex items-center">
-            <Link
+            <nav className="flex items-center">
+              <Link
               href={siteConfig.links.github}
               target="_blank"
               rel="noreferrer"
-            >
-              <div
-                className={cn(
-                  buttonVariants({ variant: "ghost" }),
-                  "w-10 px-0 hidden sm:inline-flex"
-                )}
               >
-                <Icons.gitHub className="h-4 w-4" />
-                <span className="sr-only">GitHub</span>
-              </div>
-            </Link>
-            <Link
+                <div
+                  className={cn(
+                    buttonVariants({ variant: "ghost" }),
+                    "w-10 px-0 hidden sm:inline-flex"
+                  )}
+                >
+                    <Icons.gitHub className="h-4 w-4" />
+                    <span className="sr-only">GitHub</span>
+                </div>
+              </Link>
+              <Link
               href={siteConfig.links.linkedin}
               target="_blank"
               rel="noreferrer"
             >
-              <div
-                className={cn(
-                  buttonVariants({ variant: "ghost" }),
-                  "w-10 px-0 hidden sm:inline-flex"
-                )}
-              >
-                <Icons.linkedin className="h-4 w-4" />
-                <span className="sr-only">Linkedin</span>
+                <div
+                  className={cn(
+                    buttonVariants({ variant: "ghost" }),
+                    "w-10 px-0 hidden sm:inline-flex"
+                  )}
+                >
+                  <Icons.linkedin className="h-4 w-4" />
+                  <span className="sr-only">Linkedin</span>
               </div>
             </Link>
+            <MobileNav />
           </nav>
         </div>
         </div>

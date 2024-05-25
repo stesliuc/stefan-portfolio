@@ -76,7 +76,7 @@ export function NavigationMenuHeader() {
                     href="/projects"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Projects
+                    Projects
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Various coding and math projects I have undertaken. 
