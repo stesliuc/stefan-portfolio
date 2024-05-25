@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 import "./globals.css";
 import Header from "../components/header"
 import Footer from "../components/footer"
+import { Providers } from "@/components/providers";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans"});
 
@@ -25,11 +26,13 @@ export default function RootLayout({
           inter.variable
         )}
       >
+        <Providers>
         <div className="relative flex min-h-dvh flex-col bg-background">
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
         </div>
+        </Providers>
       </body>
     </html>
   );

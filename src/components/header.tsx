@@ -6,6 +6,7 @@ import { NavigationMenuHeader } from "./navbar"
 import { Icons } from "./icons";
 import { buttonVariants } from "./ui/button";
 import { MobileNav } from "./mobile-nav";
+import { ModeToggle } from "./mode-toggle";
 
 const Header = () => {
   return (
@@ -46,6 +47,7 @@ const Header = () => {
               </div>
             </Link>
             <MobileNav />
+            <ModeToggle />
           </nav>
         </div>
         </div>
