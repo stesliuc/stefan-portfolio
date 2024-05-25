@@ -48,7 +48,7 @@ export function NavigationMenuHeader() {
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link href="/" className="mr-3 flex items-center space-x-2 hover:opacity-75">
-          <Icons.logo className="h-14 w-14" />
+          <Icons.logo className="h-12 w-12" />
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem className="max-sm:hidden">
