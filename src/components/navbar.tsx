@@ -52,16 +52,16 @@ export function NavigationMenuHeader() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem className="max-sm:hidden">
-          <Link href="/about" legacyBehavior passHref>
+          <Link href="/blog" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About Me
+              Blog
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem className="max-sm:hidden">
-          <Link href="/blog" legacyBehavior passHref>
+          <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Blog
+              About Me
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
