@@ -1,0 +1,16 @@
+---
+title: causal domain
+description: concept of causal domains in physics and philosophy
+date: 2024-05-24
+tags: ["philosophy", "physics"]
+published: true
+---
+
+A causal domain is a collection of things that are linked by cause-and-effect relationships
+
+Similar to ideas of frame of reference
+
+If two observers are at opposite ends of our universe, and we know they will never observe a single particle that will travel anywhere close to the other, do they have the same passage of time, laws of physics? How much of our universe is a function of the observer effect
+Could these observers, in independent(?) causal domains, be considered to exist in parallel worlds?
+## causal domain shear
+There are separate Cosmi, universe $A$ and universe $B$, with time independent of each because they are separate causal domains. Can a single photon that escapes from one to the other cause synchronization of A and B?
