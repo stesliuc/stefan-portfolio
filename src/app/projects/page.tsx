@@ -60,8 +60,8 @@ export default function Projects() {
                 <ResizablePanel>
                     <Image
                         src="/hanginthere.jpeg"
-                        width={500}
-                        height={500}
+                        width={10000}
+                        height={10000}
                         alt="Hanging in there"
                     />
                 </ResizablePanel>
