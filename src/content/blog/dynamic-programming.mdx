@@ -1,0 +1,124 @@
+---
+title: dynamic programming
+description: notes I took when learning how to solve dynamic programming problems
+date: 2024-05-25
+tags: ["cs", "algos"]
+published: true
+---
+Dynamic programming is a problem-solving technique used in computer science and mathematics to solve complex problems by breaking them down into overlapping subproblems and efficiently solving each subproblem only once, storing the results in a table or array for later use. It is particularly useful for optimization problems and problems with overlapping substructures.
+
+Dynamic programming typically involves the following steps:
+
+1. Characterize the structure of the problem: Identify the problem's properties and determine how it can be divided into smaller subproblems.
+    
+2. Define the recursive relationship: Express the solution to the original problem in terms of solutions to its subproblems. This is often done using a recurrence relation or equation.
+    
+3. Formulate the base cases: Determine the simplest subproblems that can be solved directly and define their solutions.
+    
+4. Build a memoization table or define a memoization cache: Store the solutions to subproblems in a data structure to avoid redundant computations.
+    
+5. Solve the subproblems: Use the recursive relationship and the memoization table to solve each subproblem, starting from the simplest ones and working upwards.
+    
+6. Construct the solution to the original problem: Combine the solutions to the subproblems to obtain the solution to the original problem.
+
+[Video](https://www.youtube.com/watch?v=oBt53YbR9Kk&t=471s)
+
+# Problems:
+
+## 1. Generating Fibonacci Numbers
+
+It's possible to implement a very simple recursive solution as follows:
+
+```python
+def fib(n):
+	if(n <= 2):
+		return 1
+	return fib(n-1)+fib(n-2)
+```
+
+However this solution scales atrociously. We also end up calculating a lot of the same fibonacci numbers over and over again, the time complexity of this function is $O(2^n)$. 
+In this example, we would calculate a lot of numbers over again. For example, `fib(7)=fib(6)+fib(5)`. But `fib(6)=fib(5)+fib(4)`, so we would be calculating `fib(5)` twice by recursion.
+
+This is where dynamic programming comes in, identifying subproblems (in this case calculating `fib(5) and fib(6)`) and coming up with a recursive way to solve those.
+
+In the case of the fibonacci numbers, we will need to create some form of memoization to remember the results of previous subproblems. 
+
+This memo will have keys, in this case our function calls, and values, which in this case will be the return values.
+
+```python
+def fib(n, memo={}):
+	if(n in memo):
+		return memo[n]
+	if(n <= 2):
+		return 1
+	memo[n] = fib(n-1, memo) + fib(n-2, memo)
+	return memo[n]
+```
+
+**Complexity**
+- Time complexity: $O(n)$, as we calculate every fibonacci element exactly once this way, and hash table look up takes constant time. 
+- Space complexity: $O(n)$, as we need to store every fibonacci number.
+## 2. Grid Traveler
+
+You are a traveler on a $m \times n$ grid. You start in the top left and your end goal is to make it to the bottom right. You can only make two moves, moving one down or one to the right.
+
+Problem: How many ways are their to traverse the grid in this way?
+
+To simplify the problem, imagine a $1 \times 1$ grid. In this case, the start is the end, so we can do nothing and we have achieved our end goal, we consider that there is 1 way to traverse the grid, which is by doing nothing.
+
+If one of $m$ and/or $n$ are 0, the grid is empty, so there are no ways to traverse it. These are trivially small examples, but in this case these are our base cases.
+
+Imagine the problem where we have a $3 \times 3$ grid, `gridTraveler(3,3)`. If you move downward, you are at position $(0,1)$, how many ways are their to travel to the goal? This is precisely just the grid traveler problem for a grid with 2 rows and 3 columns, `gridTraveler(2,3)`.
+
+Similarly if you start from the $3 \times 3$ grid and move one to the right, then the ways to reach the bottom of the grid is `gridTraveler(3,2)`.
+
+Key insight: When we move through the grid, we shrink the space of possible paths by either one row or one column.
+
+We can then implement this basic logic:
+
+```python
+def gridTravleler(m,n):
+	# Base Cases
+	if(m == 1 & n == 1):
+		return 1
+	elif(m == 0 | n == 0):
+		return 0
+	return gridTraveler(m-1,n) + gridTraveler(m, n-1)
+```
+
+This works, but is shockingly similar to our initial fibonacci code, especially in runtime. The time complexity of this is $O(2^(n+m))$ and the space complexity is $O(n+m)$. We can vastly improve this with memoization:
+
+```python
+def gridTravleler(m,n, memo={}):
+
+	# Pull value from memo
+	if (m,n) in memo:
+		return memo[(m,n)]
+		
+	# Base Cases
+	if(m == 1 & n == 1):
+		return 1
+	elif(m == 0 | n == 0):
+		return 0
+
+	# Add memo element
+	memo[(m,n)] = gridTraveler(m-1,n, memo) + gridTraveler(m, n-1, memo)
+	return memo[(m,n)]
+```
+
+Note: some programming languages done like tuples as hash table keys, in which case our first line of code in the function can initialize the key as `key = m + ',' + n`.
+
+**Complexity**
+- Time complexity: $O(n \times m)$ as we have $m$ rows and $m$ columns, and we need to calculate each `gridTraveler(m,n)`
+- Space complexity: $O(n + m)$
+
+## Memoization Recipe
+
+1. Make it work
+	1. Visualize the problem as a tree
+	2. Implement the tree using recursion
+	3. Test it
+2. Make it efficient
+	1. Add a memo object
+	2. Add a base case to return memo values
+	3. Store return values into the memo

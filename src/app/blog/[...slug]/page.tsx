@@ -4,6 +4,8 @@ import { Metadata } from "next";
 import { siteConfig } from "@/config/site";
 import { MDXContent } from "@/components/mdx-components";
 
+import "@/styles/mdx.css"
+
 interface PostPageProps {
   params: {
     slug: string[];
