@@ -3,7 +3,6 @@ import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 import { NavigationMenuHeader } from "./navbar"
-import { Logo } from "./logo"
 import { Icons } from "./icons";
 import { buttonVariants } from "./ui/button";
 
@@ -12,7 +11,6 @@ const Header = () => {
     <>
       <div className="z-10 sticky bg-background py-4 w-full top-0">
         <div className="container flex max-w-screen-2xl items-center">
-          <Logo />
           <NavigationMenuHeader />
           <div className="flex flex-1 items-center justify-end space-x-2">
           <nav className="flex items-center">

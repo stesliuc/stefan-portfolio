@@ -17,6 +17,7 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
+import { Icons } from "./icons";
 
 
 const interests: { title: string; href: string; description: string }[] = [
@@ -42,8 +43,14 @@ const interests: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuHeader() {
   return (
-    <NavigationMenu>
+
+    <NavigationMenu className="flex items-center space-x-4 lg:space-x-6">
       <NavigationMenuList>
+        <NavigationMenuItem>
+          <Link href="/" className="mr-3 flex items-center space-x-2 hover:opacity-75">
+          <Icons.logo className="h-14 w-14" />
+          </Link>
+        </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
