@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "Stefan Portfolio",
+  name: "Stefan's Portfolio",
   url: "https://example.com", //change to public url
   description: "personal portfolio and blog, built using Nextjs 14",
   author: "Stefan Tesliuc",
