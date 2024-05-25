@@ -47,12 +47,6 @@ export async function generateMetadata({
         },
       ],
     },
-    twitter: {
-      card: "summary_large_image",
-      title: post.title,
-      description: post.description,
-      images: [`/api/og?${ogSearchParams.toString()}`],
-    },
   };
 }
 
@@ -70,7 +64,7 @@ export default async function PostPage({ params }: PostPageProps) {
   }
 
   return (
-    <article className="container py-6 prose dark:prose-invert max-w-3xl mx-auto">
+    <article className="container py-6  prose dark:prose-invert max-w-3xl mx-auto">
       <h1 className="mb-2">{post.title}</h1>
       <div className="flex gap-2 mb-2">
       </div>
