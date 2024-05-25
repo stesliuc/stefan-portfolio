@@ -46,8 +46,8 @@ const Header = () => {
                   <span className="sr-only">Linkedin</span>
               </div>
             </Link>
-            <MobileNav />
             <ModeToggle />
+            <MobileNav />
           </nav>
         </div>
         </div>
