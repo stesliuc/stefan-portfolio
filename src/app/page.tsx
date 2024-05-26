@@ -45,7 +45,7 @@ export default function Home() {
             Machine Consciousness
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Machines that can think and feel and understand. AI that is truly intelligent.
+            I am most interested in machines that can think and feel and understand, AI that is truly intelligent. We currently cannot define human consciousness, although there are many interesting theories. I think neuroscience, computer science, quantum phyiscs, and philosophy need to work together for this one.
           </p>
           <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
             AI Fairness
