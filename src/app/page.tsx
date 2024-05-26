@@ -1,10 +1,16 @@
 //src/app/home.tsx
+import { buttonVariants } from "@/components/ui/button";
+import { siteConfig } from "@/config/site";
+import { cn, sortPosts } from "@/lib/utils";
+import { posts } from "#site/content";
 import Link from "next/link";
+import { PostItem } from "@/components/post-item";
 
 export default function Home() {
+  const latestPosts = sortPosts(posts).slice(0, 3);
   return (
-
-  <div>
+  <>
+  <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32">
     <div className="container max-w-4xl py-6 lg:py-10">
       <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
         <div className="flex-1 space-y-4">
@@ -36,14 +42,45 @@ export default function Home() {
             I am most interested in the intersection of knowledge domains. I am an applied research researcher.
           </p>
           <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
-            ML Experimentation
+            Machine Consciousness
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            I am currently working on how to embed various data sources, and use these embeddings directly as features, or as inputs to ML models.
+            Machines that can think and feel and understand. AI that is truly intelligent.
+          </p>
+          <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+            AI Fairness
+          </h3>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            I think our current methods of determining fairness are still too quantitative. We need to understand qualitative human experience before we abstract it away to the machines.
+          </p>
+          <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+            ML for Finance
+          </h3>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            I am currently working on embeddings of transaction data, and experimenting with using these embeddings both directly as features, or as inputs to ML models.
           </p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+  <section className="container max-w-4xl py-6 lg:py-10 flex flex-col space-y-6 mt-30">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-center">
+          Latest Blog Posts
+        </h2>
+        <ul className="flex flex-col">
+          {latestPosts.map((post) => (
+            <li key={post.slug} className="first:border-t first:border-border">
+              <PostItem
+                slug={post.slug}
+                title={post.title}
+                description={post.description}
+                date={post.date}
+                tags={post.tags}
+              />
+            </li>
+          ))}
+        </ul>
+      </section>
+  </>
   );
 }
