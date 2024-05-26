@@ -2,6 +2,12 @@
 
 import Link from 'next/link'; 
 import Image from 'next/image'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Projects's Page",
+  description: "Page where I showcase the projects I have worked on",
+};
 
 import {
     ResizableHandle,
@@ -60,8 +66,8 @@ export default function Projects() {
                 <ResizablePanel>
                     <Image
                         src="/hanginthere.jpeg"
-                        width={500}
-                        height={500}
+                        width={10000}
+                        height={10000}
                         alt="Hanging in there"
                     />
                 </ResizablePanel>

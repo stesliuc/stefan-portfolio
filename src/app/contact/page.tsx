@@ -1,6 +1,12 @@
 //src/app/contact.tsx
 
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Stefan",
+  description: "Page where you can email me",
+};
 
 export default function Contact() {
     return (

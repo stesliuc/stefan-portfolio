@@ -17,6 +17,7 @@ import {
   NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
 import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
+import { Icons } from "./icons";
 
 
 const interests: { title: string; href: string; description: string }[] = [
@@ -42,23 +43,29 @@ const interests: { title: string; href: string; description: string }[] = [
 
 export function NavigationMenuHeader() {
   return (
-    <NavigationMenu>
+
+    <NavigationMenu className="flex items-center space-x-4 lg:space-x-6">
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link href="/about" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              About Me
-            </NavigationMenuLink>
+          <Link href="/" className="mr-3 flex items-center space-x-2 hover:opacity-65">
+          <Icons.logo className="h-12 w-12" />
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="max-sm:hidden">
           <Link href="/blog" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Blog
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="max-sm:hidden">
+          <Link href="/about" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              About Me
+            </NavigationMenuLink>
+          </Link>
+        </NavigationMenuItem>
+        <NavigationMenuItem className="max-sm:hidden">
           <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
@@ -69,7 +76,7 @@ export function NavigationMenuHeader() {
                     href="/projects"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Projects
+                    Projects
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
                       Various coding and math projects I have undertaken. 
@@ -90,7 +97,7 @@ export function NavigationMenuHeader() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="max-sm:hidden">
         <NavigationMenuTrigger>Interests</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -106,7 +113,7 @@ export function NavigationMenuHeader() {
                 </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        <NavigationMenuItem className="max-sm:hidden">
           <Link href="/contact" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contact

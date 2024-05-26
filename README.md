@@ -1,8 +1,11 @@
 # stefan-portfolio
 
-This is the github for my portfolio, found at [link pending]().
+This is the github for my portfolio, found at [link pending](https:/example.com).
 
 The tech stack is:
 --NEXT.js
 --tailwind css
---written in TypeScript
+--TypeScript
+--Velite
+--shadcn/ui
+--tailwind-typography
