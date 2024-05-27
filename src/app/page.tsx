@@ -54,7 +54,7 @@ export default function Home() {
             I think our current methods of determining fairness are still too quantitative. We need to understand qualitative human experience before we abstract it away to the machines.
           </p>
           <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
-            ML for Finance
+            ML in Banking
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
             I am currently working on embeddings of transaction data, and experimenting with using these embeddings both directly as features, or as inputs to ML models.
