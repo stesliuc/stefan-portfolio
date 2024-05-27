@@ -36,7 +36,7 @@ export default function Home() {
             I am interested in the intersection of knowledge domains, specifically how insights in the natural sciences, psychology, neuroscience, and philosophy can create breakthroughs in math and computer science.
           </p>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            Category theory's Yoneda Lemma tackleda relational problems in consciouness, 
+            Category theory tackled relational problems in consciouness, 
             thermodynamics gave rise to stable diffusion alogorithms, 
             and entymology spawned ACO algorithms from patterns found in ant behavior.
             I believe in the study of the patterns and threads that bind ideas together. 
