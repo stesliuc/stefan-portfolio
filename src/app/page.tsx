@@ -33,31 +33,47 @@ export default function Home() {
             <p>Ursula K. Le Guin</p>
           </blockquote>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            I believe all knowledge is interdisplinary, where any field of knowledge is just a few hops away from another.
-            This is found all over in mathematics and computer science, from Category Theory bringing us cs design patterns, to the same field proving theories of conciousness from the Yoneda Lemma.
-            Thermodynamics brought us Diffusion algorithms, and Entymology spawned ACO algorithms from the behavior of ants.
-            Everything is connected, and inspiration is everywhere, if you are open to it.
+            I am interested in the intersection of knowledge domains, specifically how insights in the natural sciences, psychology, neuroscience, and philosophy can create breakthroughs in math and computer science.
           </p>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            I am most interested in the intersection of knowledge domains. I am an applied research researcher.
+            Category theory's Yoneda Lemma tackleda relational problems in consciouness, 
+            thermodynamics gave rise to stable diffusion alogorithms, 
+            and entymology spawned ACO algorithms from patterns found in ant behavior.
+            I believe in the study of the patterns and threads that bind ideas together. 
+          </p>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
           </p>
           <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
             Machine Consciousness
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            I am most interested in machines that can think and feel and understand, AI that is truly intelligent. We currently cannot define human consciousness, although there are many interesting theories. I think neuroscience, computer science, quantum phyiscs, and philosophy need to work together for this one.
+            I am most interested in developing machines that can think and feel and understand. 
+            A conscious computer is predicated by an algorithmic understanding of subjective experience, 
+            and thus is more suited to making and comprehending ethical decisions.
+            If this goal is even possible, it is through a joint effort in neuroscience, computer science, quantum phyiscs, and philosophy.
           </p>
           <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
             AI Fairness
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            I think our current methods of determining fairness are still too quantitative. We need to understand qualitative human experience before we abstract it away to the machines.
+            Our current methods of determining alogirthmic fairness are grounded in quantitative data analysis, 
+            which will never understand the depths of the human experience. 
+            Life is personal and complex and can never be distilled to a few sets of rules, 
+            meaning rules-based AI systems are fundamentally anti-human in design.
+          </p>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            I am interested in developing AI that can understand the impacts of its decisions and can learn to act fairly, 
+            with consideration of every outlier.
           </p>
           <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
             ML in Banking
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            I am currently working on embeddings of transaction data, and experimenting with using these embeddings both directly as features, or as inputs to ML models.
+            I am currently working in the financial industry, which is an exciting fronteir for ML at the heart of many people's lives.
+          </p>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
+            I am currently working on utilizing embeddings of transaction data as direct features to perform better customer segmentation,
+            and am involved in the development of foundation models that can leverage customer inputs to deliver tailored financial services.
           </p>
         </div>
       </div>
