@@ -10,20 +10,20 @@ export default function Home() {
   const latestPosts = sortPosts(posts).slice(0, 3);
   return (
   <>
-  <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10 lg:py-32">
-    <div className="container max-w-4xl py-6 lg:py-10">
+  <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10">
+    <div className="container max-w-4xl py-6">
       <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
         <div className="flex-1 space-y-4">
           <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Stefan Tesliuc
           </h1>
           <p className="leading-7 [&:not(:first-child)]:text-xl text-muted-foreground">
-            Welcome! I am an aspiring AI researcher, and this is a place where I share my thoughts, post cool projects I&apos;ve worked on, and give folks a way to reach out.
-            For more information about me, check out my 
+            Welcome! I am an aspiring AI researcher, and this is a place where I can share my thoughts, post cool projects I&apos;ve worked on, and give folks a way to reach out.
+            Check out my 
             <Link href="/about" className="no-underline hover:underline ps-1 pe-1">
               About Me
             </Link>
-            page.
+            page to learn more.
           </p>
           <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
             Research Interests

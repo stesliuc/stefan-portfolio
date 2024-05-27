@@ -5,6 +5,7 @@ import { PostItem } from "@/components/post-item";
 import { QueryPagination } from "@/components/query-pagination";
 import { sortPosts } from "@/lib/utils";
 import { Metadata } from "next";
+import { Tag } from "@/components/tag";
 
 export const metadata: Metadata = {
   title: "Stefan's Blog",
