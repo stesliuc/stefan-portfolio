@@ -10,7 +10,11 @@ import {
 
 export default function About() {
     return (
-      <main>
+      <>
+      <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10">
+      <div className="container max-w-4xl py-6">
+        <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
+          <div className="flex-1 space-y-4">
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
           About Me
         </h1>
@@ -20,13 +24,17 @@ export default function About() {
         </blockquote>
         <p className="leading-7 [&:not(:first-child)]:mt-6">
           My name is Mihai Stefan Tesliuc (he/him/his), but I go by Stefan. 
-          I have a few labels. 
-          I am an aspiring researcher in Artificial Intelligency and Machine Learning.
+        </p>
+        <p className="leading-7 [&:not(:first-child)]:mt-6">
+          A few labels:
+          <ul>
+          <li>I am an aspiring researcher in Artificial Intelligency and Machine Learning. </li>
           I am a Manager at Capital One in their Customer Management division where I head a Machine Learning Innovation team.
           The team is currently just myself but at least that limits the interpersonal drama. 
           I am a mathematician too; quite out of practice with theoretical proofs, but maintaining a passion for cramming my brain with hard concepts.
           I am a Brazilian Jiu Jitsu blue belt at Fifty Fifty academy in Falls Church, VA, which is the only non-participation trophy achievement I have accomplished due to physical prowess.
           I am a nature lover, a romantic idealist, and live quite a happy life in the DC area with my girlfriend Sofie.
+          </ul>
         </p>
         <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           What Motivates Me
@@ -110,7 +118,11 @@ export default function About() {
           I am a Romanian immigrant, and grew up in the United States and Kenya. 
           I studied mathematics in undergrad at The University of Chicago.
         </p>
-      </main>
+      </div>
+    </div>
+    </div>
+    </section>
+    </>
     );
   }
   
