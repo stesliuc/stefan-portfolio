@@ -24,10 +24,13 @@ import {
 
 export default function Projects() {
     return (
-      <main>
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl p-4">
-        Projects
-        </h1>
+        <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10">
+            <div className="container max-w-6xl py-6">
+                <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
+                    <div className="flex-1 space-y-4">
+                        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+                            Projects
+                        </h1>
         <div id="scraper">
             <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 p-4">
             Scraper
@@ -112,6 +115,9 @@ export default function Projects() {
                 </ResizablePanel>
             </ResizablePanelGroup>
             </div>
-      </main>
+            </div>
+            </div>
+            </div>
+      </section>
     );
   }

@@ -4,8 +4,8 @@ export const Icons = {
   logo: (props: IconProps) => (
     <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 150 150" 
-    width="150" height="150"
+    width="100" height="100"
+    viewBox="21 15 87 85" 
       stroke="currentColor"
       fill="currentColor"
       strokeWidth="0.4"
