@@ -20,27 +20,6 @@ import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 import { Icons } from "./icons";
 
 
-const interests: { title: string; href: string; description: string }[] = [
-  {
-    title: "Books",
-    href: "/interests/books",
-    description:
-      "A list of the most recent books I have read with my thoughts on them.",
-  },
-  {
-    title: "Areas I want to Study",
-    href: "/interests/studies",
-    description:
-      "A page with all the areas of study I am interested in learning about.",
-  },
-  {
-    title: "Martial Arts",
-    href: "/interests/martialarts",
-    description:
-      "My thoughts on different martial arts as a practictioner of Brazilian Jiu Jitsu and Muay Thai",
-  },
-]
-
 export function NavigationMenuHeader() {
   return (
 
@@ -96,29 +75,6 @@ export function NavigationMenuHeader() {
               </ListItem>
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem className="max-sm:hidden">
-        <NavigationMenuTrigger>Interests</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {interests.map((interests) => (
-                    <ListItem
-                      key={interests.title}
-                      title={interests.title}
-                      href={interests.href}
-                    >
-                      {interests.description}
-                    </ListItem>
-                  ))}
-                </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem className="max-sm:hidden">
-          <Link href="/contact" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Contact
-            </NavigationMenuLink>
-          </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
