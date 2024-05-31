@@ -3,9 +3,11 @@
 import Link from 'next/link'; 
 import Image from 'next/image'
 import { Metadata } from "next";
+import { Icons } from "@/components/icons";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Projects's Page",
+  title: "Stefan's Projects",
   description: "Page where I showcase the projects I have worked on",
 };
 
@@ -24,94 +26,128 @@ import {
 
 export default function Projects() {
     return (
-      <main>
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl p-4">
-        Projects
-        </h1>
-        <div id="scraper">
-            <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 p-4">
-            Scraper
-            </h2>
-            <ResizablePanelGroup direction="horizontal">
-                <ResizablePanel>
-                    <p>This is a simple web scraper I built. This was one of my first coding projects, and I hoped to achieve three things</p>
-                    <Accordion type="single" collapsible>
-                        <AccordionItem value="learn-scraping">
-                            <AccordionTrigger>Learn Scraping</AccordionTrigger>
-                            <AccordionContent>
-                               Learn how to scrape web content using Requests and BeautifulSoup.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="good-research">
-                            <AccordionTrigger>Rep Best Practices</AccordionTrigger>
-                            <AccordionContent>
-                                Follow the best practices defined in 
-                                <Link href="https://goodresearch.dev/index.html" className="hover:underline ps-1">
-                                    &quot;The Good Research Code Handbook&quot;
+        <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10">
+            <div className="container max-w-6xl py-6">
+                <div className="flex flex-col items-start gap-6 md:flex-row md:justify-between md:gap-8">
+                    <div className="flex-1 space-y-4">
+                        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+                            Projects
+                        </h1>
+                        <p className="leading-7 [&:not(:first-child)]:text-xl text-muted-foreground">
+                        Find all my recent coding projects here.
+                        </p>
+                        <div className="grid grid-cols-2 gap-3 mt-8">
+                            <div id="scraper" className="col-span-2">
+                                <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
+                                Web Scraper
+                                <Link
+                                href="https://github.com/stesliuc/scraper"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="ps-4"
+                                >
+                                    <div
+                                    className={cn(
+                                        buttonVariants({ variant: "ghost" }),
+                                        "w-10 px-0 items-center hidden sm:inline-flex"
+                                    )}
+                                    >
+                                        <Icons.gitHub className="h-5 w-5" />
+                                        <span className="sr-only">GitHub</span>
+                                        
+                                    </div>
                                 </Link>
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="gather-data">
-                            <AccordionTrigger>Gather Data</AccordionTrigger>
-                            <AccordionContent>
-                              Gather text data for planned Machine Learning projects.
-                            </AccordionContent>
-                        </AccordionItem>
-                    </Accordion>
-                    <Link href="https://github.com/stesliuc/scraper" className={buttonVariants({ variant: "outline" })}>
-                        Github
-                    </Link>
-                </ResizablePanel>
-                <ResizableHandle />
-                <ResizablePanel>
-                    <Image
-                        src="/hanginthere.jpeg"
-                        width={10000}
-                        height={10000}
-                        alt="Hanging in there"
-                    />
-                </ResizablePanel>
-            </ResizablePanelGroup>
-        </div>
-        <div id="portfolio">
-            <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 p-4">
-                Portfolio
-            </h2>
-            <ResizablePanelGroup direction="horizontal">
-                <ResizablePanel>
-                    <Image
-                        src="/hanginthere.jpeg"
-                        width={500}
-                        height={500}
-                        alt="Hanging in there"
-                    />
-                </ResizablePanel>
-                <ResizableHandle />
-                <ResizablePanel>
-                <p>Description of Portfolio Project</p>
-                    <Link href="https://github.com/stesliuc/stefan-portfolio" className={buttonVariants({ variant: "outline" })}>Github</Link>
-                </ResizablePanel>
-            </ResizablePanelGroup>
-        </div>
-        <div id = "llm">
-            <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 p-4">
-                Llama3 Model
-            </h2>
-            <ResizablePanelGroup direction="horizontal">
-                <ResizablePanel>
-                    <p>Description of Llame3 LLM Project</p>
-                </ResizablePanel>
-                <ResizableHandle />
-                <ResizablePanel>
-                    <Image
-                        src="/hanginthere.jpeg"
-                        width={500}
-                        height={500}
-                        alt="Hanging in there"
-                    />
-                </ResizablePanel>
-            </ResizablePanelGroup>
+                                </h2>
+                            </div>
+                            <div className="col-span-1 col-start-1">
+                                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                                This is a simple web scraper I built. This was one of my first coding projects, and I hoped to achieve three things:
+                                </p>
+                                <Accordion type="single" collapsible>
+                                    <AccordionItem value="learn-scraping" className="border-none" >
+                                        <AccordionTrigger>Learn Scraping</AccordionTrigger>
+                                        <AccordionContent>
+                                        Learn how to scrape web content using Requests and BeautifulSoup.
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                    <AccordionItem value="good-research" className="border-none" >
+                                        <AccordionTrigger>Rep Best Practices</AccordionTrigger>
+                                        <AccordionContent>
+                                            Follow the best practices defined in 
+                                            <Link href="https://goodresearch.dev/index.html" 
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="hover:underline ps-1">
+                                                &quot;The Good Research Code Handbook&quot;
+                                            </Link>
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                    <AccordionItem value="gather-data" className="border-none">
+                                        <AccordionTrigger>Gather Data</AccordionTrigger>
+                                        <AccordionContent>
+                                        Gather text data for planned machine learning projects.
+                                        </AccordionContent>
+                                    </AccordionItem>
+                                </Accordion>
+                            </div>
+                            <div className="col-span-1 col-start-2">
+                                
+                            </div>
+                            <div id="portfolio" className="col-span-2">
+                                <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
+                                Portfolio Website
+                                <Link
+                                href="https://github.com/stesliuc/stefan-portfolio"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="ps-4"
+                                >
+                                    <div
+                                    className={cn(
+                                        buttonVariants({ variant: "ghost" }),
+                                        "w-10 px-0 items-center hidden sm:inline-flex"
+                                    )}
+                                    >
+                                        <Icons.gitHub className="h-5 w-5" />
+                                        <span className="sr-only">GitHub</span>
+                                        
+                                    </div>
+                                </Link>
+                                </h2>
+                            </div>
+                            <div className="col-span-1 col-start-1">
+                                
+                            </div>
+                            <div className="col-span-1 col-start-2">
+                                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                                This is the website you are currently reading. I wanted to gain experince coding websites and apps, and build a space where I can interact with the world.
+                                </p>
+                            </div>
+                            <div id = "digit-classifier" className="col-span-2">
+                                <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
+                                Digit Classifier
+                                </h2>
+                            </div>
+                            <div className="col-span-1 col-start-1">
+                                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                                I wanted to learn the math behind neural nets so I wrote a simple digit classifier using just linear algebra.
+                                The classifier recognizes digits from the
+                                <Link href="https://www.kaggle.com/datasets/hojjatk/mnist-dataset" 
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            className="hover:underline ps-1">
+                                                MNIST Dataset
+                                </Link>
+                                and implements a backpropogation algorithm to train itself.
+                                </p>
+                            </div>
+                            <div className="col-span-1 col-start-2">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-      </main>
+      </section>
     );
   }

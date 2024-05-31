@@ -35,6 +35,7 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
   const sortedTags = sortTagsByCount(tags);
 
   return (
+    <section className="space-y-6 pb-8 pt-6 md:pb-12 md:mt-10">
     <div className="container max-w-4xl py-6 lg:py-10">
       <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
         <div className="flex-1 space-y-4">
@@ -86,5 +87,6 @@ export default async function BlogPage({ searchParams }: BlogPageProps) {
         </Card>
       </div>
     </div>
+    </section >
   );
 }
