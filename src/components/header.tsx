@@ -11,7 +11,7 @@ import { ModeToggle } from "./mode-toggle";
 const Header = () => {
   return (
     <>
-      <div className="z-10 sticky bg-background py-4 w-full top-0">
+      <div className="z-10 sticky bg-background backdrop-blur-smpy-4 w-full top-0">
         <div className="container flex max-w-screen-2xl items-center">
           <NavigationMenuHeader />
           <div className="flex flex-1 items-center justify-end space-x-2">

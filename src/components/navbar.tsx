@@ -70,8 +70,8 @@ export function NavigationMenuHeader() {
               <ListItem href="/projects/#portfolio" title="Portfolio">
                 The website you are currently reading!
               </ListItem>
-              <ListItem href="/projects/#llm" title="Llama Model">
-                In progress project where I implement LLM research using Llama3.
+              <ListItem href="/projects/#digit-classifier" title="Llama Model">
+                I coded a digit classifier using linear algebra to learn how NNs work.
               </ListItem>
             </ul>
           </NavigationMenuContent>
