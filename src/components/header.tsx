@@ -7,6 +7,7 @@ import { Icons } from "./icons";
 import { buttonVariants } from "./ui/button";
 import { MobileNav } from "./mobile-nav";
 import { ModeToggle } from "./mode-toggle";
+import { Mail } from "lucide-react";
 
 const Header = () => {
   return (
@@ -16,6 +17,16 @@ const Header = () => {
           <NavigationMenuHeader />
           <div className="flex flex-1 items-center justify-end space-x-2">
             <nav className="flex items-center">
+              <Link target="_blank" rel="noreferrer" href="mailto:mihaitesliuc@gmail.com">
+                <div
+                  className={cn(
+                    buttonVariants({ variant: "ghost" }),
+                    "w-10 px-0 hidden sm:inline-flex"
+                  )}>
+                        <span className="sr-only">Mail</span>
+                        <Mail className="h-5 w-5" />
+                </div>
+              </Link>
               <Link
               href={siteConfig.links.github}
               target="_blank"
