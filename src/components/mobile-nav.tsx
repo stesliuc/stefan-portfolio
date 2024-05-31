@@ -39,6 +39,9 @@ export function MobileNav() {
           <MobileLink onOpenChange={setOpen} href="/projects">
             Projects
           </MobileLink>
+          <Link target="_blank" rel="noreferrer" href="mailto:mihaitesliuc@gmail.com">
+            Contact Me
+          </Link>
           <Link target="_blank" rel="noreferrer" href={siteConfig.links.github}>
             GitHub
           </Link>
