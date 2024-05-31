@@ -70,7 +70,7 @@ export function NavigationMenuHeader() {
               <ListItem href="/projects/#portfolio" title="Portfolio">
                 The website you are currently reading!
               </ListItem>
-              <ListItem href="/projects/#digit-classifier" title="Llama Model">
+              <ListItem href="/projects/#digit-classifier" title="Digit Classifier">
                 I coded a digit classifier using linear algebra to learn how NNs work.
               </ListItem>
             </ul>
