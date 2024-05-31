@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects's Page",
+  title: "Stefan's Projects",
   description: "Page where I showcase the projects I have worked on",
 };
 
