@@ -69,7 +69,7 @@ export default function Home() {
             ML in Banking
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            I am currently working in the financial industry, which is an exciting frontier for ML at the heart of many people's lives.
+            I am currently working in the financial industry, which is an exciting frontier for ML at the heart of many people&apos;s lives.
           </p>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
             I am currently working on utilizing embeddings of transaction data as direct features to perform better customer segmentation,
