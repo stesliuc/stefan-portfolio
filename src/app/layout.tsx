@@ -6,6 +6,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import { Providers } from "@/components/providers";
 import { siteConfig } from "@/config/site";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans"});
 
