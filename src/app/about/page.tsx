@@ -30,11 +30,12 @@ export default function About() {
         </p>
         <ul className="list-disc list-inside">
           <li>I am an aspiring researcher in Artificial Intelligence and Machine Learning. </li>
-          <li>I am a Manager at Capital One in their Customer Management division where I head a Machine Learning Innovation team.</li>
-          <li>The team is currently just myself but at least that limits the interpersonal drama.</li> 
-          <li>I am a mathematician too; quite out of practice with theoretical proofs, but maintaining a passion for cramming my brain with hard concepts.</li>
-          <li>I am a Brazilian Jiu Jitsu blue belt at Fifty Fifty academy in Falls Church, VA, which is the only non-participation trophy achievement I have accomplished due to physical prowess.</li>
-          <li>I am a nature lover, a romantic idealist, and live quite a happy life in the DC area with my girlfriend Sofie.</li>
+          <li>I am a Manager at Capital One where I lead their Customer Management Machine Learning Innovation team.</li>
+          <li>I am a mathematician with a passion for cramming my brain with hard concepts.</li>
+          <li>I am a Brazilian Jiu Jitsu blue belt at
+          <Link href="https://www.5050bjj.com/" className="ps-1 pe-1 hover:underline" target="_blank" rel="noreferrer">Fifty Fifty academy</Link>
+          in Falls Church, VA, which is the only achievement I have ever accomplished due to physical prowess.</li>
+          <li>I am a nature lover, a romantic idealist, and live a happy life in the DC area with my girlfriend Sofie.</li>
         </ul>
         <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           What Motivates Me
