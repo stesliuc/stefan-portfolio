@@ -30,7 +30,7 @@ export default function Projects() {
             <div className="container max-w-6xl py-6">
                 <div className="flex flex-col items-start gap-6 md:flex-row md:justify-between md:gap-8">
                     <div className="flex-1 space-y-4">
-                        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+                        <h1 className="scroll-m-20 text-4xl py-4 font-extrabold tracking-tight lg:text-5xl">
                             Projects
                         </h1>
                         <p className="leading-7 [&:not(:first-child)]:text-xl text-muted-foreground">
@@ -38,7 +38,7 @@ export default function Projects() {
                         </p>
                         <div className="grid grid-cols-2 gap-3 mt-8">
                             <div id="scraper" className="col-span-2">
-                                <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
+                                <h2 className="mt-10 scroll-m-20 border-b text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
                                 Web Scraper
                                 <Link
                                 href="https://github.com/stesliuc/scraper"

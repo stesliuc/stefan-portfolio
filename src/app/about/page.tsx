@@ -15,7 +15,7 @@ export default function About() {
       <div className="container max-w-4xl py-6">
         <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
           <div className="flex-1 space-y-4">
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+        <h1 className="scroll-m-20 text-4xl py-4 font-extrabold tracking-tight lg:text-5xl">
           About Me
         </h1>
         <blockquote className="text-center mt-6 border-l-2 pl-6 italic">
@@ -37,7 +37,7 @@ export default function About() {
           in Falls Church, VA, which is the only achievement I have ever accomplished due to physical prowess.</li>
           <li>I am a nature lover, a romantic idealist, and live a happy life in the DC area with my girlfriend Sofie.</li>
         </ul>
-        <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        <h2 className="mt-10 scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           What Motivates Me
         </h2>
         <blockquote className="text-center mt-6 border-l-2 pl-6 italic">
@@ -144,7 +144,7 @@ export default function About() {
               </AccordionContent>
           </AccordionItem>
         </Accordion>
-        <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+        <h2 className="mt-10 scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           Background
         </h2>
         <blockquote className="text-center mt-6 border-l-2 pl-6 italic">

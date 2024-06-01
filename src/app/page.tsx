@@ -14,7 +14,7 @@ export default function Home() {
     <div className="container max-w-4xl py-6">
       <div className="flex flex-col items-start gap-4 md:flex-row md:justify-between md:gap-8">
         <div className="flex-1 space-y-4">
-          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+          <h1 className="scroll-m-20 py-4 text-4xl font-extrabold tracking-tight lg:text-5xl">
             Stefan Tesliuc
           </h1>
           <p className="leading-7 [&:not(:first-child)]:text-xl text-muted-foreground">
@@ -25,7 +25,7 @@ export default function Home() {
             </Link>
             page to learn more.
           </p>
-          <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+          <h2 className="mt-10 scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
             Research Interests
           </h2>
           <blockquote className="text-center mt-6 border-l-2 pl-6 italic">
@@ -43,7 +43,7 @@ export default function Home() {
           </p>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
           </p>
-          <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+          <h3 className="mt-8 scroll-m-20 text-2xl pt-3 font-semibold tracking-tight">
             Machine Consciousness
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -52,7 +52,7 @@ export default function Home() {
             and thus is more suited to making and comprehending ethical decisions.
             If this goal is even possible, it is through a joint effort in neuroscience, computer science, quantum phyiscs, and philosophy.
           </p>
-          <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+          <h3 className="mt-8 scroll-m-20 text-2xl pt-3 font-semibold tracking-tight">
             AI Fairness
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -65,7 +65,7 @@ export default function Home() {
             I am interested in developing AI that can understand the impacts of its decisions and can learn to act fairly, 
             with consideration of every outlier.
           </p>
-          <h3 className="mt-8 scroll-m-20 text-2xl font-semibold tracking-tight">
+          <h3 className="mt-8 scroll-m-20 text-2xl pt-3 font-semibold tracking-tight">
             ML in Banking
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
