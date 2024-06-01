@@ -39,12 +39,11 @@ export default function Projects() {
                         <div className="grid grid-cols-2 gap-3 mt-8">
                             <div id="scraper" className="col-span-2">
                                 <h2 className="mt-10 scroll-m-20 border-b text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
-                                Web Scraper
                                 <Link
                                 href="https://github.com/stesliuc/scraper"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="ps-4"
+                                className="pr-4"
                                 >
                                     <div
                                     className={cn(
@@ -57,6 +56,7 @@ export default function Projects() {
                                         
                                     </div>
                                 </Link>
+                                Web Scraper
                                 </h2>
                             </div>
                             <div className="col-span-1 col-start-1">
@@ -95,12 +95,11 @@ export default function Projects() {
                             </div>
                             <div id="portfolio" className="col-span-2">
                                 <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
-                                Portfolio Website
                                 <Link
                                 href="https://github.com/stesliuc/stefan-portfolio"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="ps-4"
+                                className="pr-4"
                                 >
                                     <div
                                     className={cn(
@@ -113,6 +112,7 @@ export default function Projects() {
                                         
                                     </div>
                                 </Link>
+                                Portfolio Website
                                 </h2>
                             </div>
                             <div className="col-span-1 col-start-1">
@@ -125,12 +125,11 @@ export default function Projects() {
                             </div>
                             <div id = "digit-classifier" className="col-span-2">
                                 <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
-                                Digit Classifier
                                 <Link
                                 href="https://github.com/stesliuc/digit-classifier"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="ps-4"
+                                className="pr-4"
                                 >
                                     <div
                                     className={cn(
@@ -143,6 +142,7 @@ export default function Projects() {
                                         
                                     </div>
                                 </Link>
+                                Digit Classifier
                                 </h2>
                             </div>
                             <div className="col-span-1 col-start-1">
