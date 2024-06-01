@@ -39,7 +39,7 @@ export default function RootLayout({
         <Providers>
         <div className="relative flex min-h-dvh flex-col bg-background">
           <Header />
-          <main className="flex-1">{children}</main>
+          <main className="flex-1">{children}<Analytics /></main>
           <Footer />
         </div>
         </Providers>
