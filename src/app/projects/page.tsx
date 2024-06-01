@@ -49,7 +49,7 @@ export default function Projects() {
                                     <div
                                     className={cn(
                                         buttonVariants({ variant: "ghost" }),
-                                        "w-10 px-0 items-center hidden sm:inline-flex"
+                                        "w-10 px-0 items-center sm:inline-flex"
                                     )}
                                     >
                                         <Icons.gitHub className="h-5 w-5" />
@@ -105,7 +105,7 @@ export default function Projects() {
                                     <div
                                     className={cn(
                                         buttonVariants({ variant: "ghost" }),
-                                        "w-10 px-0 items-center hidden sm:inline-flex"
+                                        "w-10 px-0 items-center sm:inline-flex"
                                     )}
                                     >
                                         <Icons.gitHub className="h-5 w-5" />
@@ -126,6 +126,23 @@ export default function Projects() {
                             <div id = "digit-classifier" className="col-span-2">
                                 <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
                                 Digit Classifier
+                                <Link
+                                href="https://github.com/stesliuc/digit-classifier"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="ps-4"
+                                >
+                                    <div
+                                    className={cn(
+                                        buttonVariants({ variant: "ghost" }),
+                                        "w-10 px-0 items-center sm:inline-flex"
+                                    )}
+                                    >
+                                        <Icons.gitHub className="h-5 w-5" />
+                                        <span className="sr-only">GitHub</span>
+                                        
+                                    </div>
+                                </Link>
                                 </h2>
                             </div>
                             <div className="col-span-1 col-start-1">
@@ -138,7 +155,7 @@ export default function Projects() {
                                             className="hover:underline ps-1">
                                                 MNIST Dataset
                                 </Link>
-                                and implements a backpropogation algorithm to train itself.
+                                and implements a forward and backpropogation algorithm to train itself.
                                 </p>
                             </div>
                             <div className="col-span-1 col-start-2">
