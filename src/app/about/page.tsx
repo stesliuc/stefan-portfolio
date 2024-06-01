@@ -1,6 +1,7 @@
 //src/app/about.tsx
 
 import Link from "next/link";
+import { Icons } from "@/components/icons";
 import {
   Accordion,
   AccordionContent,
@@ -22,13 +23,13 @@ export default function About() {
           &quot;We are what we do repeatedly.&quot;
           <p>Aristotle</p>
         </blockquote>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
+        <p className="leading-7 [&:not(:first-child)]:text-xl text-muted-foreground">
           My name is Mihai Stefan Tesliuc (he/him/his), but I go by Stefan. 
         </p>
-        <p className="leading-7 [&:not(:first-child)]:mt-6">
-          A few labels:
-        </p>
-        <ul className="list-disc list-inside">
+        <h2 className="mt-10 scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
+          A few labels
+        </h2>
+        <ul className="space-y-6">
           <li>I am an aspiring researcher in Artificial Intelligence and Machine Learning.</li>
           <li>I am a Manager at Capital One where I lead the Customer Management Machine Learning Innovation team.</li>
           <li>I am a mathematician with a masochism for attacking my brain with hard concepts.</li>
@@ -46,12 +47,12 @@ export default function About() {
         </blockquote>
         <Accordion type="single" collapsible>
           <AccordionItem value="broader-ideas">
-              <AccordionTrigger>Broader Ideas</AccordionTrigger>
+              <AccordionTrigger className="text-xl">Broader Ideas</AccordionTrigger>
               <AccordionContent>
                 <Accordion type="single" collapsible>
                   <AccordionItem value="consciousness">
-                    <AccordionTrigger>Consciousness</AccordionTrigger>
-                    <AccordionContent>
+                    <AccordionTrigger className="text-lg">Consciousness</AccordionTrigger>
+                    <AccordionContent className="text-base">
                       I am deeply interested in the concept of consciousness and its relationship with intelligence.
                       I think it&apos;s incredible that we understand it so little, and yet our human selves are entirely dependent on it.
                       I want to explore consciousness and what brings rise to subjective experience through a mathematical, computational, philsophical, and mystical lens.
@@ -59,8 +60,8 @@ export default function About() {
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="collective-unconsciousness">
-                    <AccordionTrigger>Collective Unconsciousness</AccordionTrigger>
-                    <AccordionContent>
+                    <AccordionTrigger className="text-lg">Collective Unconsciousness</AccordionTrigger>
+                    <AccordionContent className="text-base">
                       Jung&apos;s idea of the collective unconscious is simultaneously powerful, controversial, and inherent.
                       It posits a collective pool of experiences and instincts, that are shared amongst all humans.
                       The theory suggests that instincts are explained as unconscious reactions based on prior triggers and knowledge hardcoded into this collective pool of knowledge.
@@ -72,12 +73,12 @@ export default function About() {
               </AccordionContent>
           </AccordionItem>
           <AccordionItem value="philosophy">
-              <AccordionTrigger>Philosophy</AccordionTrigger>
+              <AccordionTrigger className="text-xl">Philosophy</AccordionTrigger>
               <AccordionContent>
                 <Accordion type="single" collapsible>
                   <AccordionItem value="camus">
-                    <AccordionTrigger>Camus</AccordionTrigger>
-                    <AccordionContent>
+                    <AccordionTrigger className="text-lg">Camus</AccordionTrigger>
+                    <AccordionContent className="text-base">
                       I love existential philosophy, as it tackles impossible problems that are inherently tied to the curse of consciousness.
                       I enjoy analyzing modern problems through an existential lens, and no philosopher has understood the nature of the human condition as much as Camus.
                       From &quot;The Fall&quot; to &quot;The Myth of Sisyphus&quot;, Camus poetically lampoons the modern, existentially-plagues figure, and anticipates their behavior.
@@ -86,8 +87,8 @@ export default function About() {
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="marcuse">
-                    <AccordionTrigger>Marcuse</AccordionTrigger>
-                    <AccordionContent>
+                    <AccordionTrigger className="text-lg">Marcuse</AccordionTrigger>
+                    <AccordionContent className="text-base">
                       Marcuse has a few ideas I love.
                       The first is that the ideas we are capable of having are shaped by our environment.
                       I love this idea as much as it terrifies me, and it comes up in examples such as the Sapir-Whorf hypothesis.
@@ -99,8 +100,8 @@ export default function About() {
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="rousseau">
-                    <AccordionTrigger>Rousseau</AccordionTrigger>
-                    <AccordionContent>
+                    <AccordionTrigger className="text-lg">Rousseau</AccordionTrigger>
+                    <AccordionContent className="text-base">
                       Rousseau believed in humanity.
                       He did not buy that humans were inherently violent animals, but within man there was a creative, romantic spark that would enable collaboration, if we were allowed to be truly free.
                       He states, &quot;Man is born free; and everywhere he is in chains.&quot;. 
@@ -112,28 +113,28 @@ export default function About() {
               </AccordionContent>
           </AccordionItem>
           <AccordionItem value="inspirations">
-              <AccordionTrigger>Inspirational Figures</AccordionTrigger>
+              <AccordionTrigger className="text-xl">Inspirational Figures</AccordionTrigger>
               <AccordionContent>
                 <Accordion type="single" collapsible>
                   <AccordionItem value="herbert">
-                    <AccordionTrigger>Frank Herbert</AccordionTrigger>
-                    <AccordionContent>
+                    <AccordionTrigger className="text-lg">Frank Herbert</AccordionTrigger>
+                    <AccordionContent className="text-base">
                       Frank Herbert was able to understand the patterns of human nature, and the drivers behind our motives (religion, politics, ecology, destiny).
                       He not only understood these, but was able to build a world to show us a way out.
                       He is a revolutionary author.
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="leguin">
-                    <AccordionTrigger>Ursula K. Le Guin</AccordionTrigger>
-                    <AccordionContent>
+                    <AccordionTrigger className="text-lg">Ursula K. Le Guin</AccordionTrigger>
+                    <AccordionContent className="text-base">
                       I am convinced Ursula K. Le Guin is a time traveler from the future.
                       According the Marcuse, she should not be able to have the ideas she does, and yet in &quot;The Dispossessed&quot;, Le Guin conjures up an anarchist alternative to monopolistic capitalism that although not prefect, feels so much closer than any other idea positied by political philosophers.
                       Le Guin&apos;s work changed my political and personal philosophies, and I think her works are the most revolutionary pieces of fiction I have ever read.
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="weil">
-                      <AccordionTrigger>Simone Weil</AccordionTrigger>
-                      <AccordionContent>
+                      <AccordionTrigger className="text-lg">Simone Weil</AccordionTrigger>
+                      <AccordionContent className="text-base">
                         Simone Weil is a badass, and no philosopher has ever lived their ideals to the level that she did.
                         Her core concept is &quot;attention&quot;, a way of connecting with the outside world that is free of prior prejudice, and leaves you truly open to the signals of the universe.
                         Her ideas are radical, and she was even more so.
