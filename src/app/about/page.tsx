@@ -53,7 +53,7 @@ export default function About() {
                     <AccordionTrigger>Consciousness</AccordionTrigger>
                     <AccordionContent>
                       I am deeply interested in the concept of consciousness and its relationship with intelligence.
-                      I think it's incredible that we understand it so little, and yet our human selves are entirely dependent on it.
+                      I think it&apos;s incredible that we understand it so little, and yet our human selves are entirely dependent on it.
                       I want to explore consciousness and what brings rise to subjective experience through a mathematical, computational, philsophical, and mystical lens.
                       I am fascinated by the endless different explanations of consciousness, from the quantum interpretations tied to the observer effect, to the suggestion of consciousness as a curse, or a glitch.
                     </AccordionContent>
@@ -61,7 +61,7 @@ export default function About() {
                   <AccordionItem value="collective-unconsciousness">
                     <AccordionTrigger>Collective Unconsciousness</AccordionTrigger>
                     <AccordionContent>
-                      Jung's idea of the collective unconscious is simultaneously powerful, controversial, and inherent.
+                      Jung&apos;s idea of the collective unconscious is simultaneously powerful, controversial, and inherent.
                       It posits a collective pool of experiences and instincts, that are shared amongst all humans.
                       The theory suggests that instincts are explained as unconscious reactions based on prior triggers and knowledge hardcoded into this collective pool of knowledge.
                       The idea of a shared knowledge base is fascinating, and gives rise to human parallel processing for collaboration.
@@ -128,7 +128,7 @@ export default function About() {
                     <AccordionContent>
                       I am convinced Ursula K. Le Guin is a time traveler from the future.
                       According the Marcuse, she should not be able to have the ideas she does, and yet in &quot;The Dispossessed&quot;, Le Guin conjures up an anarchist alternative to monopolistic capitalism that although not prefect, feels so much closer than any other idea positied by political philosophers.
-                      Le Guin's work changed my political and personal philosophies, and I think her works are the most revolutionary pieces of fiction I have ever read.
+                      Le Guin&apos;s work changed my political and personal philosophies, and I think her works are the most revolutionary pieces of fiction I have ever read.
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="weil">
