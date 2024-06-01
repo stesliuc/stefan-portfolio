@@ -90,7 +90,9 @@ export default function Projects() {
                                     </AccordionItem>
                                 </Accordion>
                             </div>
-                            <div className="col-span-1 col-start-2">
+                            <div className="flex justify-center items-center col-span-1 col-start-2">
+                                
+                                <Icons.webscraper />
                                 
                             </div>
                             <div id="portfolio" className="col-span-2">
@@ -115,8 +117,8 @@ export default function Projects() {
                                 Portfolio Website
                                 </h2>
                             </div>
-                            <div className="col-span-1 col-start-1">
-                                
+                            <div className="flex justify-center items-center col-span-1 col-start-1">
+                                <Icons.portfolio />
                             </div>
                             <div className="col-span-1 col-start-2">
                                 <p className="leading-7 [&:not(:first-child)]:mt-6">
@@ -158,8 +160,8 @@ export default function Projects() {
                                 and implements a forward and backpropogation algorithm to train itself.
                                 </p>
                             </div>
-                            <div className="col-span-1 col-start-2">
-                                
+                            <div className="flex justify-center items-center  col-span-1 col-start-2">
+                                <Icons.digitclassifier />
                             </div>
                         </div>
                     </div>
