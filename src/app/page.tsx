@@ -28,7 +28,7 @@ export default function Home() {
           <h2 className="mt-10 scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
             Research Interests
           </h2>
-          <blockquote className="text-center mt-6 border-l-2 pl-6 italic">
+          <blockquote className="text-center text-lg mt-6 border-l-2 pl-6 italic">
             &quot;I come with empty hands and the desire to unbuild walls.&quot; 
             <p>Ursula K. Le Guin</p>
           </blockquote>

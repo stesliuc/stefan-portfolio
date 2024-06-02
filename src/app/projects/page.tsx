@@ -118,11 +118,21 @@ export default function Projects() {
                                 </h2>
                             </div>
                             <div className="flex justify-center items-center col-span-1 col-start-1">
+
                                 <Icons.portfolio />
+
                             </div>
                             <div className="col-span-1 col-start-2">
                                 <p className="leading-7 [&:not(:first-child)]:mt-6">
                                 This is the website you are currently reading. I wanted to gain experince coding websites and apps, and build a space where I can interact with the world.
+                                </p>
+                                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                                I haven&apos;t practiced web desing since high school computer class, if that wasn&apos;t obvious, and that was using pure html and css.
+                                With this portfolio I wanted to use the most relevant tech stack. 
+                                It is built using
+                                <Link href="https://nextjs.org" target="_blank" rel="noreferrer" className="hover:underline ps-1">Next.js 14</Link>, 
+                                <Link href="https://tailwindcss.com" target="_blank" rel="noreferrer" className="hover:underline ps-1">tailwind css</Link>,
+                                and deployed with<Link href="https://vercel.com" target="_blank" rel="noreferrer" className="hover:underline ps-1">Vercel</Link>.
                                 </p>
                             </div>
                             <div id = "digit-classifier" className="col-span-2">
@@ -154,14 +164,16 @@ export default function Projects() {
                                 <Link href="https://www.kaggle.com/datasets/hojjatk/mnist-dataset" 
                                             target="_blank"
                                             rel="noreferrer"
-                                            className="hover:underline ps-1">
+                                            className="hover:underline ps-1 pe-1">
                                                 MNIST Dataset
                                 </Link>
                                 and implements a forward and backpropogation algorithm to train itself.
                                 </p>
                             </div>
                             <div className="flex justify-center items-center  col-span-1 col-start-2">
+
                                 <Icons.digitclassifier />
+                                
                             </div>
                         </div>
                     </div>

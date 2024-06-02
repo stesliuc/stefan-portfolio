@@ -19,10 +19,19 @@ export default function About() {
         <h1 className="scroll-m-20 text-4xl py-4 font-extrabold tracking-tight lg:text-5xl">
           About Me
         </h1>
-        <blockquote className="text-center mt-6 border-l-2 pl-6 italic">
-          &quot;We are what we do repeatedly.&quot;
-          <p>Aristotle</p>
-        </blockquote>
+        <div className="grid grid-cols-2 gap-3 mt-8">
+          <div className="col-start-1 col-span-1">
+            <blockquote className="text-center text-lg mt-6 border-l-2 pl-6 italic">
+            &quot;We are what we do repeatedly.&quot;
+            <p>Aristotle</p>
+            </blockquote>
+          </div>
+          <div className="col-start-2 col-span-1 item-start justify-start">
+            <Icons.readingguy />
+          </div>
+        </div>
+        
+        
         <p className="leading-7 [&:not(:first-child)]:text-xl text-muted-foreground">
           My name is Mihai Stefan Tesliuc (he/him/his), but I go by Stefan. 
         </p>
@@ -41,7 +50,7 @@ export default function About() {
         <h2 className="mt-10 scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           What Motivates Me
         </h2>
-        <blockquote className="text-center mt-6 border-l-2 pl-6 italic">
+        <blockquote className="text-center text-lg mt-6 border-l-2 pl-6 italic">
           &quot;Who looks outside, dreams; who looks inside, awakes.&quot;
           <p>Carl Jung</p>
         </blockquote>
@@ -148,7 +157,7 @@ export default function About() {
         <h2 className="mt-10 scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           Background
         </h2>
-        <blockquote className="text-center mt-6 border-l-2 pl-6 italic">
+        <blockquote className="text-center text-lg mt-6 border-l-2 pl-6 italic">
          &quot;Man starts over again everyday, in spite of all he knows, against all he knows.&quot; 
          <p>Emil Cioran</p>
         </blockquote>
