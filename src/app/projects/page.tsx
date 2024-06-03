@@ -124,12 +124,10 @@ export default function Projects() {
                             </div>
                             <div className="col-span-1 col-start-2">
                                 <p className="leading-7 [&:not(:first-child)]:mt-6">
-                                This is the website you are currently reading. I wanted to gain experince coding websites and apps, and build a space where I can interact with the world.
+                                This is the website you are currently reading. I wanted to gain experience coding websites and apps, and build a space to interact with the world.
                                 </p>
                                 <p className="leading-7 [&:not(:first-child)]:mt-6">
-                                I haven&apos;t practiced web desing since high school computer class, if that wasn&apos;t obvious, and that was using pure html and css.
-                                With this portfolio I wanted to use the most relevant tech stack. 
-                                It is built using
+                                This website is built using
                                 <Link href="https://nextjs.org" target="_blank" rel="noreferrer" className="hover:underline ps-1">Next.js 14</Link>, 
                                 <Link href="https://tailwindcss.com" target="_blank" rel="noreferrer" className="hover:underline ps-1">tailwind css</Link>,
                                 and deployed with<Link href="https://vercel.com" target="_blank" rel="noreferrer" className="hover:underline ps-1">Vercel</Link>.
