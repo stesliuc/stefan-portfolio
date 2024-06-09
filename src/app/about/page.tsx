@@ -45,7 +45,7 @@ export default function About() {
           <li>I am a Brazilian Jiu Jitsu blue belt at
           <Link href="https://www.5050bjj.com/" className="ps-1 pe-1 hover:underline" target="_blank" rel="noreferrer">Fifty Fifty academy</Link>
           in Falls Church, VA, which is the only achievement I have ever accomplished due to physical prowess.</li>
-          <li>I am a nature lover, a romantic idealist, and live a happy life in the DC area with my girlfriend Sofie.</li>
+          <li>I am a nature lover, a romantic idealist, and live in the DC area with my girlfriend Sofie.</li>
         </ul>
         <h2 className="mt-10 scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           What Motivates Me
@@ -62,20 +62,15 @@ export default function About() {
                   <AccordionItem value="consciousness">
                     <AccordionTrigger className="text-lg">Consciousness</AccordionTrigger>
                     <AccordionContent className="text-base">
-                      I am deeply interested in the concept of consciousness and its relationship with intelligence.
-                      I think it&apos;s incredible that we understand it so little, and yet our human selves are entirely dependent on it.
-                      I want to explore consciousness and what brings rise to subjective experience through a mathematical, computational, philsophical, and mystical lens.
-                      I am fascinated by the endless different explanations of consciousness, from the quantum interpretations tied to the observer effect, to the suggestion of consciousness as a curse, or a glitch.
+                      I am interested in the concept of consciousness and its relationship with intelligence, and am even more interested in it due to how little we actually understand it.
+                      It makes you wonder if science isn&apos;t equipped to explain consciousness, hmm...
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="collective-unconsciousness">
                     <AccordionTrigger className="text-lg">Collective Unconsciousness</AccordionTrigger>
                     <AccordionContent className="text-base">
-                      Jung&apos;s idea of the collective unconscious is simultaneously powerful, controversial, and inherent.
-                      It posits a collective pool of experiences and instincts, that are shared amongst all humans.
-                      The theory suggests that instincts are explained as unconscious reactions based on prior triggers and knowledge hardcoded into this collective pool of knowledge.
-                      The idea of a shared knowledge base is fascinating, and gives rise to human parallel processing for collaboration.
-                      Jung focused a lot of his studies on how to harness your unconscious, and I like practicing Jungian introspection in my personal life.
+                      Jung&apos;s idea of the collective unconscious suggests there is a collective pool of experiences and instincts, that are shared amongst all humans, hard-coded into our DNA.
+                      When you act on instinct for example, your unconcious is dipping into this pool and taking a big long sip, relaying how to act beneath the level of your active consciousness.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
@@ -88,34 +83,30 @@ export default function About() {
                   <AccordionItem value="camus">
                     <AccordionTrigger className="text-lg">Camus</AccordionTrigger>
                     <AccordionContent className="text-base">
-                      I love existential philosophy, as it tackles impossible problems that are inherently tied to the curse of consciousness.
-                      I enjoy analyzing modern problems through an existential lens, and no philosopher has understood the nature of the human condition as much as Camus.
-                      From &quot;The Fall&quot; to &quot;The Myth of Sisyphus&quot;, Camus poetically lampoons the modern, existentially-plagues figure, and anticipates their behavior.
-                      His work has never been more relevant, and reading it breaks you down, only to build yourself back up stronger.
-                      His core idea is that the human condition is characterized by a struggle for self-justification and a search for identity, but this struggle is a beautiful one that should be cherished. 
+                      I love existential philosophy; it is a sysphean task to try to answer the most impossible questions in life.
+                      No philosopher has understood the nature of the human condition as much as Camus.
+                      From &quot;The Fall&quot; to &quot;The Myth of Sisyphus&quot;, Camus creates vile characters that seem to predict a lot of the toxic traits you see in the modern day world.
+                      His core idea is that the human condition is characterized by a struggle for self-justification and a search for identity, and he teaches how to love that struggle.
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="marcuse">
                     <AccordionTrigger className="text-lg">Marcuse</AccordionTrigger>
                     <AccordionContent className="text-base">
-                      Marcuse has a few ideas I love.
-                      The first is that the ideas we are capable of having are shaped by our environment.
-                      I love this idea as much as it terrifies me, and it comes up in examples such as the Sapir-Whorf hypothesis.
-                      The second is that humans have a drive to create, Eros. 
-                      I think this is inherently true.
-                      And the second is less so an idea, and more of an observation, of the monopolistic capitalist society we live in, restricting our thoughts, and supressing our Eros.
+                      Marcuse suggests that the ideas we are capable of having are shaped by our environment.
+                      He also talks about the Eros inherent in us, a human drive to create, versus the monopolistic capitalist society we live in, restricting our thoughts and supressing our Eros.
                       Marcuse perfectly outlines the cyclical trap we have found ourselves in where toil exists for the purpose of toil, and our ideas are so polluted by the world we live in we cannot fathom an alternative.
-                      It is some of the most upsetting philosophy I have read, but also suggests revolutionary art and the quiet refusal as ways out. 
+                      His philosophy is bleak, it feels so true to modern day life, but he also offers some ways out if you believe him.
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="rousseau">
                     <AccordionTrigger className="text-lg">Rousseau</AccordionTrigger>
                     <AccordionContent className="text-base">
-                      Rousseau believed in humanity.
+                      Rousseau really believed in us humans.
                       He did not buy that humans were inherently violent animals, but within man there was a creative, romantic spark that would enable collaboration, if we were allowed to be truly free.
                       He states, &quot;Man is born free; and everywhere he is in chains.&quot;. 
                       Life today is pre-defined by the rules of our society, and technology is rapidly creating new rules for the way life is lived, which most people have no control over.
-                      We are born into a pre-defined society with laws, social contracts, and technology.
+                      I think Rousseau would have a lot of thoughts about technology and society today, and he might be a little horrified by what he saw.
+                      I like his philsophy as it is a reminder of the natural state of man.
                     </AccordionContent>
                   </AccordionItem>
                 </Accordion>
