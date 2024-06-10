@@ -48,10 +48,10 @@ export function NavigationMenuHeader() {
           <NavigationMenuTrigger>Projects</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
+              <li className="row-span-4">
                 <NavigationMenuLink asChild>
                   <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex h-full w-full select-none flex-col justify-center rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/projects"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium">
@@ -64,14 +64,17 @@ export function NavigationMenuHeader() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/projects/#scraper" title="Scraper">
-                A simple web scraper I built to practice development best practices.
+              <ListItem href="/projects/#digit-classifier" title="Digit Classifier">
+                I coded a digit classifier using linear algebra to learn how NNs work.
               </ListItem>
               <ListItem href="/projects/#portfolio" title="Portfolio">
                 The website you are currently reading!
               </ListItem>
-              <ListItem href="/projects/#digit-classifier" title="Digit Classifier">
-                I coded a digit classifier using linear algebra to learn how NNs work.
+              <ListItem href="/projects/#scraper" title="Scraper">
+                A simple web scraper I built to practice development best practices.
+              </ListItem>
+              <ListItem href="/projects/#tvrtl" title="tvrtl">
+                An app based on turtle betting to experiment with procedural motion generation.
               </ListItem>
             </ul>
           </NavigationMenuContent>
