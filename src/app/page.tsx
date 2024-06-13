@@ -36,9 +36,9 @@ export default function Home() {
             I am interested in how neurosicence, psychology, and philosophy can be applied to make machine learning algorithms smarter.
           </p>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            I feel like we have skipped a few steps with Artificial Intelligence, the first being an understanding of what intelligence actually is.
-            Instead of trying to improve on whatever iteration of GPT we are currently on, it makes more sense to reground our development of ML algorithms from the principles of how the human brain works.
-            Of course we don&apos;t know how it works, but I am excited that a deeper study of AI can naturally lead to a deeper study and appreciation of how we function.
+            We have skipped a few steps towards Artificial Intelligence, for example understanding what intelligence actually is.
+            Instead of trying to improve on whichever iteration of GPT we are currently on, it makes more sense to reground development of ML algorithms from the principles of how the human brain works.
+            We don&apos;t actually know how it works, but a deeper study of AI can also lead to a deeper study and appreciation of how we think and function.
           </p>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
           </p>
@@ -47,11 +47,13 @@ export default function Home() {
           </h3>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
             I am most interested in developing machines that can think and feel and understand. 
+          </p>
+          <p className="leading-7 [&:not(:first-child)]:mt-6">
             Sounds easy! 
-            Don&apos;t worry, I&apos;m not some doomer who believes in ushering in the next way of supreme AI overlords, 
-            I think developing machine consciousness is the biggest thrust we can undertake to make algorithms and AI systems that are more human and humane
-            A conscious computer would by definition understand subjective experience, and thus be more suited to making ethical decisions.
-            This seems preferable to unleashing some binary task masters and then have researchers scrambling to teach it to be fair after the fact.
+            I&apos;m not a pro-extinction doomer who wants to usher in our supreme AI overlords, 
+            but I think developing machine consciousness is the biggest thrust we can undertake to make algorithms and AI systems that are more human and humane.
+            A conscious computer would definitionally understand subjective experience, and thus be more suited to making ethical decisions.
+            This seems preferable to unleashing some binary task masters and then have researchers scrambling to teach them to be fair after the fact.
           </p>
           <h3 className="mt-8 scroll-m-20 text-2xl pt-3 font-semibold tracking-tight">
             AI Fairness
