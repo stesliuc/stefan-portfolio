@@ -33,13 +33,13 @@ export default function About() {
         
         
         <p className="leading-7 [&:not(:first-child)]:text-xl text-muted-foreground">
-          My name is Mihai Stefan Tesliuc (he/him/his), but I go by Stefan. 
+          My name is Mihai Stefan Tesliuc (he/him/his), and I go by Stefan. 
         </p>
         <h2 className="mt-10 scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           A few labels
         </h2>
         <ul className="space-y-6">
-          <li>I am an aspiring researcher in Artificial Intelligence and Machine Learning.</li>
+          <li>I am an aspiring researcher in AI and Machine Learning.</li>
           <li>I am a Manager at Capital One where I lead the Customer Management Machine Learning Innovation team.</li>
           <li>I am a mathematician with a masochism for attacking my brain with hard concepts.</li>
           <li>I am a Brazilian Jiu Jitsu blue belt at
@@ -95,15 +95,15 @@ export default function About() {
                       Marcuse suggests that the ideas we are capable of having are shaped by our environment.
                       He also talks about the Eros inherent in us, a human drive to create, versus the monopolistic capitalist society we live in, restricting our thoughts and supressing our Eros.
                       Marcuse perfectly outlines the cyclical trap we have found ourselves in where toil exists for the purpose of toil, and our ideas are so polluted by the world we live in we cannot fathom an alternative.
-                      His philosophy is bleak, it feels so true to modern day life, but he also offers some ways out if you believe him.
+                      His philosophy is bleak, it feels so true to modern day life, but he also offers some ways out.
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="rousseau">
                     <AccordionTrigger className="text-lg">Rousseau</AccordionTrigger>
                     <AccordionContent className="text-base">
                       Rousseau really believed in us humans.
-                      He did not buy that humans were inherently violent animals, but within man there was a creative, romantic spark that would enable collaboration, if we were allowed to be truly free.
-                      He states, &quot;Man is born free; and everywhere he is in chains.&quot;. 
+                      He did not buy that humans were inherently violent animals, but within man there was a creative, romantic spark that would enable collaboration if we were allowed to be truly free.
+                      He states, &quot;Man is born free; and everywhere he is in chains&quot;. 
                       Life today is pre-defined by the rules of our society, and technology is rapidly creating new rules for the way life is lived, which most people have no control over.
                       I think Rousseau would have a lot of thoughts about technology and society today, and he might be a little horrified by what he saw.
                       I like his philsophy as it is a reminder of the natural state of man.
@@ -128,7 +128,7 @@ export default function About() {
                     <AccordionTrigger className="text-lg">Ursula K. Le Guin</AccordionTrigger>
                     <AccordionContent className="text-base">
                       I am convinced Ursula K. Le Guin is a time traveler from the future.
-                      According the Marcuse, she should not be able to have the ideas she does, and yet in &quot;The Dispossessed&quot;, Le Guin conjures up an anarchist alternative to monopolistic capitalism that although not prefect, feels so much closer than any other idea positied by political philosophers.
+                      According the Marcuse, she should not be able to have the ideas she does, and yet in &quot;The Dispossessed&quot;, Le Guin conjures up an anarchist alternative to monopolistic capitalism that although not perfect, feels so much closer than any other idea posited by political philosophers.
                       Le Guin&apos;s work changed my political and personal philosophies, and I think her works are the most revolutionary pieces of fiction I have ever read.
                     </AccordionContent>
                   </AccordionItem>
@@ -138,7 +138,7 @@ export default function About() {
                         Simone Weil is a badass, and no philosopher has ever lived their ideals to the level that she did.
                         Her core concept is &quot;attention&quot;, a way of connecting with the outside world that is free of prior prejudice, and leaves you truly open to the signals of the universe.
                         Her ideas are radical, and she was even more so.
-                        She died too young, but riding the blazing horse of her values, never to be forgotten.
+                        She died too young, but riding the blazing horse of her values.
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
