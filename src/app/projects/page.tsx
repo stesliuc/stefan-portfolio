@@ -219,7 +219,11 @@ export default function Projects() {
                                 </p>
                                 <p className="leading-7 [&:not(:first-child)]:mt-6">
                                 I was very interested in brownian motion, and b-splines in computer animation, so I focused on procedurally generating the smooth random path the turtle would take.
-                                You can find a demo of our app in the github.
+                                You can find a demo of our app in the 
+                                    <Link href="https://github.com/samrroyall/tvrtl"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    className="hover:underline ps-1">github</Link>.
                                 Happy gambling!
                                 </p>
                             </div>
