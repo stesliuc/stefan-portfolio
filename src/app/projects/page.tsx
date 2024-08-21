@@ -37,7 +37,8 @@ export default function Projects() {
                         Find all my recent coding projects here.
                         </p>
                         <div className="grid grid-cols-2 gap-3 mt-8">
-                        <div id = "digit-classifier" className="col-span-2">
+
+                            <div id = "digit-classifier" className="col-span-2">
                                 <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
                                 <Link
                                 href="https://github.com/stesliuc/digit-classifier"
@@ -73,10 +74,13 @@ export default function Projects() {
                                 </p>
                             </div>
                             <div className="flex justify-center items-center  col-span-1 col-start-2">
-
-                                <Icons.digitclassifier />
                                 
+                                <Link href="https://github.com/stesliuc/digit-classifier" className="mr-3 flex items-center space-x-2 hover:opacity-65" target="_blank" rel="noreferrer">
+                                <Icons.digitclassifier />
+                                </Link>
+
                             </div>
+
                             <div id="portfolio" className="col-span-2">
                                 <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
                                 <Link
@@ -101,7 +105,9 @@ export default function Projects() {
                             </div>
                             <div className="flex justify-center items-center col-span-1 col-start-1">
 
+                                <Link href="https://github.com/stesliuc/stefan-portfolio" className="mr-3 flex items-center space-x-2 hover:opacity-65" target="_blank" rel="noreferrer">
                                 <Icons.portfolio />
+                                </Link>
 
                             </div>
                             <div className="col-span-1 col-start-2">
@@ -171,9 +177,12 @@ export default function Projects() {
                             </div>
                             <div className="flex justify-center items-center col-span-1 col-start-2">
                                 
+                                <Link href="https://github.com/stesliuc/scraper" className="mr-3 flex items-center space-x-2 hover:opacity-65" target="_blank" rel="noreferrer">
                                 <Icons.webscraper />
+                                </Link>
                                 
                             </div>
+
                             <div id="tvrtl" className="col-span-2">
                                 <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
                                 <Link
@@ -198,7 +207,9 @@ export default function Projects() {
                             </div>
                             <div className="flex justify-center items-center col-span-1 col-start-1">
 
+                                <Link href="https://github.com/samrroyall/tvrtl" className="mr-3 flex items-center space-x-2 hover:opacity-65" target="_blank" rel="noreferrer">
                                 <Icons.tvrtl />
+                                </Link>
 
                             </div>
                             <div className="col-span-1 col-start-2">
@@ -227,6 +238,7 @@ export default function Projects() {
                                 Happy gambling!
                                 </p>
                             </div>
+
                         </div>
                     </div>
                 </div>
