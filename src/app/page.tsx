@@ -33,7 +33,7 @@ export default function Home() {
             <p>Ursula K. Le Guin</p>
           </blockquote>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
-            I am interested in how neurosicence, psychology, and philosophy can be applied to make machine learning algorithms smarter.
+            I am interested in how neuroscience, psychology, and philosophy can be applied to make machine learning algorithms smarter.
           </p>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
             We have skipped a few steps towards Artificial Intelligence, for example understanding what intelligence actually is.
