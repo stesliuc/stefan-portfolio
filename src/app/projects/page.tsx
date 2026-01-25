@@ -38,6 +38,50 @@ export default function Projects() {
                         </p>
                         <div className="grid grid-cols-2 gap-3 mt-8">
 
+                            <div id="personaledger" className="col-span-2">
+                                <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
+                                <Link
+                                href="https://github.com/stesliuc/stefan-portfolio"
+                                target="_blank"
+                                rel="noreferrer"
+                                className="pr-4"
+                                >
+                                    <div
+                                    className={cn(
+                                        buttonVariants({ variant: "ghost" }),
+                                        "w-10 px-0 items-center sm:inline-flex"
+                                    )}
+                                    >
+                                        <Icons.gitHub className="h-5 w-5" />
+                                        <span className="sr-only">GitHub</span>
+                                        
+                                    </div>
+                                </Link>
+                                PersonaLedger
+                                </h2>
+                            </div>
+                            <div className="flex justify-center items-center col-span-1 col-start-1">
+
+                                <Link href="https://github.com/CapitalOne-Research/PersonaLedger" className="mr-3 flex items-center space-x-2 hover:opacity-65" target="_blank" rel="noreferrer">
+                                <p>Image under construction</p>
+                                </Link>
+
+                            </div>
+                            <div className="col-span-1 col-start-2">
+                                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                                PersonaLedger is a system and dataset for generating high-quality, synthetic financial data. 
+                                The dataset is entirely created using self-enforcing LLM agents, and was developed as a joint research effort between Capital One and UMD. 
+                                We have benchmarked it by using it the dataset to predict customers who will borrow beyond their spending capacity, and to identify identity theft in transaction sequences.
+                                Code and datasets are found in the 
+                                <Link href="https://github.com/CapitalOne-Research/PersonaLedger" target="_blank" rel="noreferrer" className="hover:underline ps-1">repo</Link>.
+                                </p>
+                                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                                The generation system works in a self-correcting loop: an LLM generates user “personas” along with transaction data matching the persona, then agentic and code validators enforce financial rules, and invalid generations are fed back as constraints to improve future generation. 
+                                You can find the PersonaLedger research paper  
+                                <Link href="https://openreview.net/forum?id=YPfSfqVedI" target="_blank" rel="noreferrer" className="hover:underline ps-1">here</Link>.
+                                </p>
+                            </div>
+
                             <div id = "digit-classifier" className="col-span-2">
                                 <h2 className="mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0 py-4">
                                 <Link

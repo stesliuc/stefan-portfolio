@@ -43,12 +43,12 @@ export default function Home() {
           </p>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
             Some questions that are very interesting to me right now:
-            <ul className="mt-4 list-disc list-inside space-y-2">
-              <li>How can AI systems self-improve?</li>
-              <li>How can researchers ensure self-improving systems remain safe and don&apos;t develop biases?</li>
-              <li>How can insights from human reasoning-such as hierarchical planning, memory, or counterfactual reasoning-inform new approaches?</li>
-            </ul>
           </p>
+          <ul className="mt-4 list-disc list-inside space-y-2">
+            <li>How can AI systems self-improve?</li>
+            <li>How can researchers ensure self-improving systems remain safe and don&apos;t develop biases?</li>
+            <li>How can insights from human reasoning-such as hierarchical planning, memory, or counterfactual reasoning-inform new approaches?</li>
+          </ul>
           <p className="leading-7 [&:not(:first-child)]:mt-6">
           </p>
           <h3 className="mt-10 scroll-m-20 border-b py-4 text-2xl font-semibold tracking-tight transition-colors first:mt-0">

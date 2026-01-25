@@ -1,0 +1,37 @@
+---
+title: personaledger
+description: synthetic transaction data generation research project
+date: 2025-12-31
+tags: ["AI", "research", "synthetic data", "data generation", "LLM", "financial data"]
+published: true
+---
+While working at Capital One, I had the privilege on working on the research project PersonaLedger.
+
+PersonaLedger is a system and dataset for generating high-quality, synthetic financial data. 
+The dataset is entirely created using self-enforcing LLM agents, and was developed as a joint research effort between Capital One and The University of Maryland. 
+
+The generation system works in a self-correcting loop: an LLM generates user “personas” along with transaction data matching the persona, then agentic and code validators enforce financial rules, and invalid generations are fed back as constraints to improve future generation. 
+You can find the PersonaLedger research paper [here](https://openreview.net/forum?id=YPfSfqVedI). 
+
+We have benchmarked it by using it the dataset to predict customers who will borrow beyond their spending capacity, and to identify identity theft in transaction sequences.
+Code and datasets are found in our [repo](https://github.com/CapitalOne-Research/PersonaLedger).
+
+A big theme of the project was self-improvement, and understanding how well LLMs already understood financial logic based on their pretraining data. 
+We started the project off by designing the architecture of how we wanted AI agents to build transaction data.
+We discussed having a series of agents conversate as in a multi-agent framework. For example a "user" agent might interact with a "bank" agent, the user would have short-term and long-term memory modules that would affect their behavior, and their "conversation" would output in the form of a credit card statement of transactions, actions, payments, etc.
+We also wanted agentic judges, i.e. if a series of transactions was nonsensical, these judges would pick up on that, and spit back a rule saying we can't be doing that anymore.
+
+We evolved this idea quite a bit, and instead had one main agent outputting a series of transactions. We generated a user persona with different types of behavior, for example their financial behjavior and how they used their card, but also their current career goals and aspirations, their hobbies and expenses.
+These rich user personas then sequentially generated transactions, with each transaction having a chain-of-thought reasoning attached to it for why that user made that transaction.
+We coded up a discrete set of business rules that each transaction also had to pass, or would need to be regenerated. For example, a user could not borrow over some threshold above their credit limit.
+Then we used LLM evaluators to assess the series of transactions overall; was the user making routine grocery pruchases? Where their subscription bills recurring at the same time and amount each month?
+Codifying all of these business rules was a combination between business experts, and LLM intuition, making this project a bit of a cyborg.
+
+It was an incredible opportunity for me to work on this, as I got to actually learn what goes in to AI research. A lot of it is coding, and gemini and other LLMs can help immesnely for that, such as how to use [DSPy](https://dspy.ai/) to optimize generation prompts and align the output of all transactions so then a pythonic code loop could execute over hundreds of thousands of examples in a standardized manner.
+There was also a lot of opportunity for philosophical debate and thought partnership, such as if we should have a ledger of the user's current state and memory, or if a rich enough persona followed by chain-of-thought sequential reasoning in each transaction's generation could capture memory just as well (the approach we chose to take).
+Being the more business-y folk in the room, I got to pressure test the generations based on my own knowledge of how credit card data looked, which is a lot harder than I thought because real data is often noisier and messier than the wildest LLM halucinations; generally for every iron-clad business rule we came up with, we could find some outlier examples in the data disproving it.
+
+I learned a lot, we built a novel thing that worked, and hopefully this dataset can be used by other researchers to push forward the state of AI in credit and the financial industry. If you are to use it, please use it for good.
+
+
+
