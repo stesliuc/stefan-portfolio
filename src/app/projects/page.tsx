@@ -63,7 +63,7 @@ export default function Projects() {
                             <div className="flex justify-center items-center col-span-1 col-start-1">
 
                                 <Link href="https://github.com/CapitalOne-Research/PersonaLedger" className="mr-3 flex items-center space-x-2 hover:opacity-65" target="_blank" rel="noreferrer">
-                                <p>Image under construction</p>
+                                <Icons.personaledger />
                                 </Link>
 
                             </div>
