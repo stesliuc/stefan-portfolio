@@ -33,19 +33,21 @@ export default function About() {
         
         
         <p className="leading-7 [&:not(:first-child)]:text-xl text-muted-foreground">
-          My name is Mihai Stefan Tesliuc (he/him/his), and I go by Stefan. 
+          My name is Stefan Tesliuc (he/him/his). 
         </p>
         <h2 className="mt-10 scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           A few labels
         </h2>
         <ul className="space-y-6">
-          <li>I am an aspiring researcher in AI and Machine Learning.</li>
-          <li>I am a Manager at Capital One where I lead the Customer Management Machine Learning Innovation team.</li>
-          <li>I am a mathematician with a masochism for attacking my brain with hard concepts.</li>
+          <li>I am a Senior Manager at Capital One where I lead the Customer Management New Models team. We build models to better understand how people use their credit lines.</li>
+          <li>I do some research in AI and Machine Learning, and especially how it interacts with Credit.</li>
+          <li>I have a math background from UChicago and enjoy working on theoretical quantitative problems.</li>
           <li>I am a Brazilian Jiu Jitsu blue belt at
-          <Link href="https://www.5050bjj.com/" className="ps-1 pe-1 hover:underline" target="_blank" rel="noreferrer">Fifty Fifty academy</Link>
-          in Falls Church, VA, which is the only achievement I have ever accomplished due to physical prowess.</li>
+          <Link href="https://blackcatjiujitsu.com/" className="ps-1 pe-1 hover:underline" target="_blank" rel="noreferrer">Black Cat Jiu Jitsu</Link>
+          in Springfield, VA, which is the only achievement I have ever accomplished due to physical prowess.</li>
           <li>I am a nature lover, a romantic idealist, and live in the DC area with my girlfriend Sofie.</li>
+          <li>I am a father to a orange tabby cat named Gus</li>
+          <li>I am an aspiring fine woodworker, ask me about my workbench! It&apos;s my first foray into making hardware.</li>
         </ul>
         <h2 className="mt-10 scroll-m-20 border-b py-4 text-3xl font-semibold tracking-tight transition-colors first:mt-0">
           What Motivates Me
@@ -63,7 +65,7 @@ export default function About() {
                     <AccordionTrigger className="text-lg">Consciousness</AccordionTrigger>
                     <AccordionContent className="text-base">
                       I am interested in the concept of consciousness and its relationship with intelligence, and am even more interested in it due to how little we actually understand it.
-                      It makes you wonder if science isn&apos;t equipped to explain consciousness, hmm...
+                      I am also interested in exploring where current scientific method are incapable of explaining consciousness.
                     </AccordionContent>
                   </AccordionItem>
                   <AccordionItem value="collective-unconsciousness">
@@ -113,7 +115,7 @@ export default function About() {
               </AccordionContent>
           </AccordionItem>
           <AccordionItem value="inspirations">
-              <AccordionTrigger className="text-xl">Inspirational Figures</AccordionTrigger>
+              <AccordionTrigger className="text-xl">Inspirational Authors</AccordionTrigger>
               <AccordionContent>
                 <Accordion type="single" collapsible>
                   <AccordionItem value="herbert">
